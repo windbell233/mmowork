@@ -19,22 +19,21 @@ namespace GameServer
         Thread thread;
         bool running = false;
         NetService network;
+
         public bool Init()
         {
-            //服务端监听
             network = new NetService();
             network.Init(8000);
-            HelloWorldService.Instance.Init();
-           // DBService.Instance.Init();
-           thread = new Thread(new ThreadStart(this.Update));
+            DBService.Instance.Init();
+            UserService.Instance.Init();
+            thread = new Thread(new ThreadStart(this.Update));
+
             return true;
         }
 
         public void Start()
         {
-           
             network.Start();
-            HelloWorldService.Instance.Start();
             running = true;
             thread.Start();
         }
@@ -42,9 +41,9 @@ namespace GameServer
 
         public void Stop()
         {
-            network.Stop();
             running = false;
             thread.Join();
+            network.Stop();
         }
 
         public void Update()

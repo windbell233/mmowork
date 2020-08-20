@@ -122,13 +122,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Services\DBService.cs" />
-    <Compile Include="Services\HelloWorldService.cs" />
+    <Compile Include="Services\UserSerevice.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Core\Vector3Int.cs" />
     <Compile Include="TCharacter.cs">
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
-    <Compile Include="TCharltem.cs">
+    <Compile Include="TCharacterItem.cs">
       <DependentUpon>Entities.tt</DependentUpon>
     </Compile>
     <Compile Include="TPlayer.cs">
