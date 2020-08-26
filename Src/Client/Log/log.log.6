@@ -1,0 +1,27 @@
+2020-08-26 16:00:14,014 [ 1] INFO  Unity: LoadingManager start
+2020-08-26 16:01:14,220 [ 1] INFO  Unity: UserRegisterRequest::user :user123 psw:1234
+2020-08-26 16:01:14,223 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-08-26 16:01:14,224 [ 1] INFO  Unity: DoConnect
+2020-08-26 16:01:14,226 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-08-26 16:01:14,228 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-08-26 16:01:14,231 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-08-26 16:01:14,517 [ 1] INFO  Unity: OnUserRegister:Failed [用户已存在.]
+2020-08-26 16:01:14,522 [ 1] ERROR Unity: Message handler exception:, Object reference not set to an instance of an object, Assembly-CSharp,   at UIMessageBox.Init (System.String title, System.String message, MessageBoxType type, System.String btnOK, System.String btnCancel) [0x0001f] in E:\EXWorld\mmowork\Src\Client\Assets\Scripts\UI\UIMessageBox.cs:34 
+  at MessageBox.Show (System.String message, System.String title, MessageBoxType type, System.String btnOK, System.String btnCancel) [0x00040] in E:\EXWorld\mmowork\Src\Client\Assets\Scripts\UI\MessageBox.cs:16 
+  at UIRegister.OnRegister (Result result, System.String msg) [0x00022] in E:\EXWorld\mmowork\Src\Client\Assets\Scripts\UI\UIRegister.cs:23 
+  at Services.UserService.OnUserRegister (System.Object sender, SkillBridge.Message.UserRegisterResponse response) [0x00046] in E:\EXWorld\mmowork\Src\Client\Assets\Scripts\Services\UserService.cs:118 
+  at Network.MessageDistributer`1[System.Object].RaiseEvent[UserRegisterResponse] (System.Object sender, SkillBridge.Message.UserRegisterResponse msg) [0x00044] in D:\Projects\ExtremeWorld\project-z\Src\Lib\Common\Network\MessageDistributer.cs:105 
+2020-08-26 16:01:14,525 [ 1] FATAL Unity: <log4net.Error>Exception during StringFormat: Input string was not in a correct format. <format>{0
+{1}</format><args>{NullReferenceException: Object reference not set to an instance of an object, UIMessageBox.Init (System.String title, System.String message, MessageBoxType type, System.String btnOK, System.String btnCancel) (at Assets/Scripts/UI/UIMessageBox.cs:34)
+MessageBox.Show (System.String message, System.String title, MessageBoxType type, System.String btnOK, System.String btnCancel) (at Assets/Scripts/UI/MessageBox.cs:16)
+UIRegister.OnRegister (Result result, System.String msg) (at Assets/Scripts/UI/UIRegister.cs:23)
+Services.UserService.OnUserRegister (System.Object sender, SkillBridge.Message.UserRegisterResponse response) (at Assets/Scripts/Services/UserService.cs:118)
+Network.MessageDistributer`1[System.Object].RaiseEvent[UserRegisterResponse] (System.Object sender, SkillBridge.Message.UserRegisterResponse msg) (at D:/Projects/ExtremeWorld/project-z/Src/Lib/Common/Network/MessageDistributer.cs:105)
+}</args></log4net.Error>
+2020-08-26 16:04:56,162 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-08-26 16:04:56,163 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+

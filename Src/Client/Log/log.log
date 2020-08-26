@@ -1,0 +1,17 @@
+2020-08-26 16:51:48,237 [ 1] INFO  Unity: LoadingManager start
+2020-08-26 16:52:10,234 [ 1] INFO  Unity: UserRegisterRequest::user :user111 psw:1234
+2020-08-26 16:52:10,236 [ 1] INFO  Unity: ConnectToServer() Start 
+2020-08-26 16:52:10,237 [ 1] INFO  Unity: DoConnect
+2020-08-26 16:52:10,239 [ 1] INFO  Unity: NetClient.DoConnect on 127.0.0.1:8000
+2020-08-26 16:52:10,241 [ 1] INFO  Unity: Connect[0] to server 127.0.0.1:8000
+
+2020-08-26 16:52:10,246 [ 1] INFO  Unity: LoadingMesager::OnGameServerConnect :0 reason:Success
+2020-08-26 16:52:13,662 [ 1] INFO  Unity: OnUserRegister:Success [None]
+2020-08-26 16:52:23,439 [ 1] INFO  Unity: UserRegisterRequest::user :user111 psw:1234
+2020-08-26 16:52:23,489 [ 1] INFO  Unity: OnUserRegister:Failed [用户已存在.]
+2020-08-26 16:52:38,210 [ 1] INFO  Unity: OnDestroy NetworkManager.
+2020-08-26 16:52:38,211 [ 1] WARN  Unity: CloseConnection(), errorCode: 1007
+UnityEngine.Debug:LogWarning(Object)
+Network.NetClient:CloseConnection(Int32) (at Assets/Scripts/Network/NetClient.cs:180)
+Network.NetClient:OnDestroy() (at Assets/Scripts/Network/NetClient.cs:175)
+
